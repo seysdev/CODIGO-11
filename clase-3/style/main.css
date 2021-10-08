@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*REGLAS GENERALES*/
+body {
+  background: blue;
+}
+
+div {
+  padding: 20px;
+  margin: 20px;
+  background: red;
+}
+
+h2 {
+  color: white;
+  font-family: arial;
+  margin-bottom: 20px;
+}
+
+/*reglas con clases*/
+.letra-roja {
+  color: red;
+}
+
+.format-orange {
+  background: orange;
+  border-radius: 20px;
+  text-align:center;
+}

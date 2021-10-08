@@ -1,0 +1,65 @@
+/*
+SELECTORES GLOBALES
+*/
+body {
+  color: #fff;
+  font-size: 13px;
+  font-family: arial;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+/*
+HEADER
+*/
+header {
+  background: #00AAB5;
+  text-align: center;
+  padding: 20px;
+}
+
+header a {
+  color: red;
+}
+
+header .header-logo {
+  font-size: 64px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+/*
+MY SKILLS
+*/
+.my-skills {
+  background: #7299FE;
+  text-align: center;
+  padding-left: 104px;
+  padding-right: 104px;
+  padding-top: 28px;
+  padding-bottom: 86px;
+}
+
+.my-skills h2 {
+  color: #B508A3;
+}
+
+/*
+SERVICES
+*/
+.services {
+  background:  #FB7171;
+}
+
+.services h2 {
+  color: #00CC9B;
+}
+
+
+
