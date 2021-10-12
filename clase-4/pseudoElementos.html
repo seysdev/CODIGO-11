@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SELECTORES PSEUDOELEMENTO</title>
+  <style>
+    p::first-letter {
+      /* font-size: 40px; */
+    }
+
+    p::first-line {
+      /* background: red; */
+    }
+
+    p::before {
+      content: " ' ";
+    }
+
+    p::after {
+      content: " ' ";
+    }
+
+    *::selection {
+      background: blue;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus illum et sint quidem reprehenderit tenetur
+    quibusdam? Earum, perspiciatis facilis laborum animi laboriosam mollitia totam voluptatum! Quam similique nostrum
+    itaque cum!</p>
+</body>
+
+</html>
