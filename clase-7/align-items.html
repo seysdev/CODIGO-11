@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEXBOX</title>
+  <style>
+    body {
+      font-family: arial;
+    }
+
+    .flex {
+      display: flex;
+      height: 100px;
+      border: 1px solid orange;
+      background: pink;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0 0 10px;
+      padding: 0 0 0px;
+    }
+
+    h3 {
+      font-size: 14px;
+      margin: 0 0 5px;
+    }
+
+    .flex div:nth-child(odd) {
+      background-color: red;
+    }
+
+    .flex div:nth-child(even) {
+      background-color: yellow;
+    }
+
+    .align-items-flex-start {
+      align-items: flex-start;
+    }
+
+    .align-items-flex-end {
+      align-items: flex-end;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .align-items-stretch {
+      align-items: stretch;
+    }
+
+    .align-items-baseline {
+      align-items: baseline;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>ALIGN ITEMS</h2>
+  <hr>
+  <h3>flex-start</h3>
+  <div class="flex align-items-flex-start">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="flex align-items-flex-end">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>center</h3>
+  <div class="flex align-items-center">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>stretch</h3>
+  <div class="flex align-items-stretch">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>baseline</h3>
+  <div class="flex align-items-baseline">
+    <div style="line-height: 30px;">LOGO</div>
+    <div style="line-height:40px;">NAV</div>
+  </div>
+  <br>
+  <h2>FLEX-DIRECTION</h2>
+  <hr>
+  <style>
+    .flex-column {
+      flex-direction: column;
+      height: 100px;
+    }
+  </style>
+  <h3>flex-start</h3>
+  <div class="flex align-items-flex-start flex-column">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>flex-end</h3>
+  <div class="flex align-items-flex-end flex-column">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>center</h3>
+  <div class="flex align-items-center flex-column">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>stretch</h3>
+  <div class="flex align-items-stretch flex-column">
+    <div>LOGO</div>
+    <div>NAV</div>
+  </div>
+  <h3>baseline</h3>
+  <div class="flex align-items-baseline flex-column">
+    <div style="line-height: 30px;">LOGO</div>
+    <div style="line-height:40px;">NAV</div>
+  </div>
+</body>
+
+</html>

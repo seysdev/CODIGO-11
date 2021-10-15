@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX ALIGN CONTENT</title>
+  <style>
+    .box {
+      display: flex;
+      width: 400px;
+      height: 100px;
+      background: pink;
+      flex-wrap: wrap;
+      background-color: pink;
+    }
+
+    .box div {
+      width: 50%;
+    }
+
+    .box div:nth-child(even) {
+      background: red;
+    }
+
+    .box div:nth-child(odd) {
+      background: yellow;
+    }
+
+    .align-content-flex-start {
+      align-content: flex-start;
+    }
+
+    .align-content-flex-end {
+      align-content: flex-end;
+    }
+
+    .align-content-space-between {
+      align-content: space-between;
+    }
+
+    .align-content-space-around {
+      align-content: space-around;
+    }
+
+    .align-content-center {
+      align-content: center;
+    }
+
+    .align-content-stretch {
+      align-content: stretch;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box align-content-flex-start">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <br>
+  <div class="box align-content-flex-end">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <br>
+  <div class="box align-content-space-between">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <br>
+  <div class="box align-content-space-around">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <br>
+  <div class="box align-content-center">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+  <br>
+  <div class="box align-content-stretch">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+  </div>
+</body>
+
+</html>
