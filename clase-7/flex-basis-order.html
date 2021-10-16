@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX BASIS</title>
+  <style>
+    .box {
+      display: flex;
+    }
+
+    .box div {
+      flex-basis: 100px;
+    }
+
+    .box div:nth-child(odd) {
+      background: red;
+    }
+
+    .box div:nth-child(even) {
+      background: yellow;
+    }
+
+    .box div:nth-child(1) {
+      order: 2;
+    }
+
+    .box div:nth-child(2) {
+      order: 1;
+    }
+
+    .box div:last-child {
+      order: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+</body>
+
+</html>

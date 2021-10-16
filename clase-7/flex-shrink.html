@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLEX-SHRINK</title>
+  <style>
+    .box {
+      width: 400px;
+      background: pink;
+      display: flex;
+    }
+
+    .box div {
+      width: 200px;
+      flex-shrink: 1;
+    }
+
+    .box div:nth-child(odd) {
+      background: red;
+    }
+
+    .box div:nth-child(even) {
+      background: yellow;
+    }
+
+    /*
+      espacio no disponible = 1200px
+      total suma flex-shrink = 8
+
+      unit-grow =  1200px / 8 = 150
+    */
+
+    .box div:nth-child(1) {
+
+    }
+
+    .box div:last-child {
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+  </div>
+</body>
+
+</html>
