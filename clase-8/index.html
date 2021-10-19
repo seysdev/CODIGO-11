@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS-GRID</title>
+  <style>
+    .grid {
+      display: grid;
+      background: pink;
+      grid-template-columns: 100px 100px auto 100px;
+      grid-template-rows: 100px 50px auto;
+      color: blue;
+      overflow: hidden;
+    }
+
+    .grid img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .grid div {
+      overflow: hidden;
+    }
+
+    .grid div:nth-child(odd) {
+      background: red;
+    }
+
+    .grid div:nth-child(even) {
+      background: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid">
+    <div><img src="https://picsum.photos/200/300?random=1"></div>
+    <div><img src="https://picsum.photos/200/300?random=2"></div>
+    <div><img src="https://picsum.photos/200/300?random=3"></div>
+    <div><img src="https://picsum.photos/200/300?random=4"></div>
+    <div><img src="https://picsum.photos/200/300?random=5"></div>
+    <div><img src="https://picsum.photos/200/300?random=6"></div>
+    <div><img src="https://picsum.photos/200/300?random=7"></div>
+    <div><img src="https://picsum.photos/200/300?random=8"></div>
+    <div><img src="https://picsum.photos/200/300?random=9"></div>
+    <div><img src="https://picsum.photos/200/300?random=10"></div>
+    <div><img src="https://picsum.photos/200/300?random=11"></div>
+    <div><img src="https://picsum.photos/200/300?random=12"></div>
+  </div>
+</body>
+
+</html>
