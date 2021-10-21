@@ -1,0 +1,88 @@
+div {
+  background: red;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 42px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex div {
+  width: 50%;
+  background: white;
+  border: 2px solid red;
+}
+
+div header {
+  background: brown;
+}
+
+div footer {
+  background: brown;
+}
+
+/*
+  max-width: ancho maximo
+  min-width: ancho minimo
+  min-height: altura minima
+  max-height: altura maxima
+*/
+
+/*DESKTOP O TABLET 720px - 1080px*/
+@media (min-width:720px) and (max-width: 1080px) {
+  div {
+    background: blueviolet;
+    max-width: 980px;
+    font-size: 34px;
+  }
+
+  .flex div {
+    width: 100%;
+  }
+
+  div header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/*MOBILE LARGE 420px - 720px*/
+@media (min-width:420px) and (max-width: 719px) {
+  div {
+    background: blue;
+    max-width: 620px;
+    font-size: 28px;
+  }
+
+  div header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/*MOBILE SMALL 320px - 420px*/
+@media (min-width:320px) and (max-width: 419px) {
+  div {
+    background: pink;
+    max-width: 320px;
+    font-size: 22px;
+  }
+}
+
+/*MOBILE XSMALL 0 - 320px*/
+@media (min-width:0) and (max-width: 319px) {
+  div {
+    background: orange;
+    max-width: 280px;
+    font-size: 34px;
+  }
+}
