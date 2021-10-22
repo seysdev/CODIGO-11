@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BORDER RADIUS</title>
+  <style>
+    div.radius {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 56px 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    div.flex:hover  div.radius::after {
+      border-radius: 0 20px 0 20px;
+    }
+
+    div.radius:last-child {
+      margin-right: 0;
+    }
+
+    div.radius::after {
+      content: '';
+      width: 40%;
+      height: 40%;
+      background: white;
+      position: absolute;
+      border-radius: 20px 0 20px 0;
+    }
+
+    .flex {
+      display: inline-flex;
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="radius">
+    </div>
+    <div class="radius">
+    </div>
+  </div>
+</body>
+
+</html>
