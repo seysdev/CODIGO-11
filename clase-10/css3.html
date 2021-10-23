@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BORDER RADIUS</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: arial;
+
+      height: 100vh;
+    }
+
+    div.radius {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      border-radius: 56px 0px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 20px;
+    }
+
+    div.flex:hover div.radius::after {
+      border-radius: 0 20px 0 20px;
+    }
+
+    div.radius:last-child {
+      margin-right: 0;
+    }
+
+    div.radius::after {
+      content: '';
+      width: 40%;
+      height: 40%;
+      background: white;
+      position: absolute;
+      border-radius: 20px 0 20px 0;
+    }
+
+    .flex {
+      display: inline-flex;
+      background: blue;
+      box-shadow: 10px 10px 1px #00ffe8, 20px 20px 0px #ff0000, 30px 30px 0px #9cff00;
+    }
+
+    h1 {
+      text-shadow: 2px 2px 0 red, 4px 4px 0 blue, 6px 6px 0 pink, 8px 8px 0 green;
+      background: linear-gradient(90deg, yellow, orange) no-repeat;
+      border: 2px solid red;
+      padding: 20px;
+      /* transition-property: text-shadow, linear-gradient, border; */
+      /* transition-property: all;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      transition-delay: 2s; */
+      transition: all .5s ease-out;
+      cursor: pointer;
+    }
+
+    h1:hover {
+      text-shadow: -2px -2px 0 red, -4px -4px 0 blue, -6px -6px 0 pink, -8px -8px 0 green;
+      background: linear-gradient(180deg, yellow, orange) no-repeat;
+      border: 10px solid orange;
+    }
+
+    .lineal {
+      color: white;
+      background: linear-gradient(90deg, transparent, blue, pink, red, orange, brown) no-repeat;
+    }
+
+    .radial {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      margin: auto;
+      background: radial-gradient(red 10%, blue 10%, orange 80%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex">
+    <div class="radius">
+    </div>
+    <div class="radius">
+    </div>
+  </div>
+  <br>
+  <br>
+  <h1>TEXT SHADOW</h1>
+  <h2 class="lineal">DEGRADADO LINEAL</h2>
+  <h2 class="radial"></h2>
+
+  <style>
+    p {
+      animation-name: animationExample;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      /* animation-iteration-count: infinite;
+      animation-direction: reverse; */
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes animationExample {
+
+      /* from {
+        font-size: 0px;
+        background-color: red;
+        color: black;
+      }
+
+      to {
+        font-size: 40px;
+        background-color: orange;
+        color: blue;
+      } */
+      0% {
+        font-size: 0px;
+        color: red;
+      }
+
+      25% {
+        font-size: 10px;
+        color: blue;
+      }
+
+      50% {
+        font-size: 20px;
+        color: orange;
+      }
+
+      75% {
+        font-size: 30px;
+        color: blueviolet;
+      }
+
+      100% {
+        font-size: 40px;
+        color: brown;
+      }
+    }
+  </style>
+  <style>
+    .like {
+      display: block;
+      width: 110px;
+      height: 110px;
+      margin: 0 auto;
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/349115/like_animation.png) 0 0 no-repeat;
+      background-size: 3000%;
+    }
+
+    .has-like {
+      animation: like-gif steps(28) 1s infinite both;
+    }
+
+    .pause {
+      animation-play-state: paused;
+    }
+
+    @keyframes like-gif {
+      0% {
+        background-position: 0%;
+      }
+
+      100% {
+        background-position: 100%;
+      }
+    }
+  </style>
+  <button class="like ">
+    LIKE
+  </button>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic magni esse voluptas aspernatur sunt doloremque officia
+    fuga tempora. Suscipit quod adipisci veritatis quibusdam beatae commodi vitae a ad sint? Rerum.</p>
+
+  <script>
+    // atrapando al boton
+    document.querySelector('button')
+      .onclick = function () {
+        // agrega la clase
+        document.querySelector('button').classList.add('has-like')
+
+        // quita la clase despues de un segundo
+        setTimeout(function () {
+          document.querySelector('button').classList.remove('has-like')
+        }, 1000)
+
+      }
+  </script>
+
+</body>
+
+</html>

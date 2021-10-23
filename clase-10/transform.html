@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TRANSFORM</title>
+  <style>
+    .box {
+      width: 100px;
+      height: 100px;
+      background: red;
+      transition: all .5s ease;
+      margin-bottom: 20px;
+    }
+
+    .box:hover.translate {
+      transform: translate(10px, 10px);
+    }
+
+    .box:hover.translate-x {
+      transform: translateX(20px)
+    }
+
+    .box:hover.translate-y {
+      transform: translateY(30px)
+    }
+
+    .box:hover.scale {
+      transform: scale(.5)
+    }
+
+    .box:hover.rotate {
+      /* transform: rotateX(-180deg) */
+      transform: rotate(1turn)
+    }
+
+    .box:hover.rotate-x {
+      /* transform: rotateX(-180deg) */
+      transform: rotateX(180deg)
+    }
+
+    .box:hover.rotate-y {
+      /* transform: rotateY(-180deg) */
+      transform: rotateY(180deg)
+    }
+
+    .box:hover.skew {
+      /* transform: rotateY(-180deg) */
+      transform: skew(15deg, 15deg)
+    }
+
+    .box:hover.skew-x {
+      /* transform: rotateY(-180deg) */
+      transform: skewX(15deg)
+    }
+
+    .box:hover.skew-y {
+      /* transform: rotateY(-180deg) */
+      transform: skewY(15deg)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box translate">
+    TRANSLATE
+  </div>
+  <div class="box translate-x">
+    TRANSLATE X
+  </div>
+  <div class="box translate-y">
+    TRANSLATE Y
+  </div>
+  <div class="box scale">
+    SCALE
+  </div>
+  <div class="box rotate">
+    ROTATE
+  </div>
+  <div class="box rotate-x">
+    ROTATE X
+  </div>
+  <div class="box rotate-y">
+    ROTATE Y
+  </div>
+  <div class="box skew">
+    SKEW
+  </div>
+  <div class="box skew-x">
+    SKEW X
+  </div>
+  <div class="box skew-y">
+    SKEW Y
+  </div>
+
+  <style>
+    .scene {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #CCC;
+      margin: 80px;
+      perspective: 400px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform-style: preserve-3d;
+      transform: translateZ(-100px);
+      transition: transform 1s;
+    }
+
+    .cube.show-front {
+      transform: translateZ(-100px) rotateY(0deg);
+    }
+
+    .cube.show-right {
+      transform: translateZ(-100px) rotateY(-90deg);
+    }
+
+    .cube.show-back {
+      transform: translateZ(-100px) rotateY(-180deg);
+    }
+
+    .cube.show-left {
+      transform: translateZ(-100px) rotateY(90deg);
+    }
+
+    .cube.show-top {
+      transform: translateZ(-100px) rotateX(-90deg);
+    }
+
+    .cube.show-bottom {
+      transform: translateZ(-100px) rotateX(90deg);
+    }
+
+    .cube__face {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      border: 2px solid black;
+      line-height: 200px;
+      font-size: 40px;
+      font-weight: bold;
+      color: white;
+      text-align: center;
+    }
+
+    .cube__face--front {
+      background: hsla(0, 100%, 50%, 0.7);
+    }
+
+    .cube__face--right {
+      background: hsla(60, 100%, 50%, 0.7);
+    }
+
+    .cube__face--back {
+      background: hsla(120, 100%, 50%, 0.7);
+    }
+
+    .cube__face--left {
+      background: hsla(180, 100%, 50%, 0.7);
+    }
+
+    .cube__face--top {
+      background: hsla(240, 100%, 50%, 0.7);
+    }
+
+    .cube__face--bottom {
+      background: hsla(300, 100%, 50%, 0.7);
+    }
+
+    .cube__face--front {
+      transform: rotateY(0deg) translateZ(100px);
+    }
+
+    .cube__face--right {
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    .cube__face--back {
+      transform: rotateY(180deg) translateZ(100px);
+    }
+
+    .cube__face--left {
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    .cube__face--top {
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    .cube__face--bottom {
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    label {
+      margin-right: 10px;
+    }
+  </style>
+  <div class="scene">
+    <div class="cube">
+      <div class="cube__face cube__face--front">front</div>
+      <div class="cube__face cube__face--back">back</div>
+      <div class="cube__face cube__face--right">right</div>
+      <div class="cube__face cube__face--left">left</div>
+      <div class="cube__face cube__face--top">top</div>
+      <div class="cube__face cube__face--bottom">bottom</div>
+    </div>
+  </div>
+</body>
+
+</html>
