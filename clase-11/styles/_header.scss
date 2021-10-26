@@ -1,0 +1,47 @@
+/*
+HEADER
+*/
+header {
+  &:hover {
+    background: blue;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      background: brown;
+    }
+  }
+
+  ul {
+    padding: 20px;
+  }
+
+  > li {
+    color: red;
+  }
+
+  .nombre-clase {
+    color: pink;
+  }
+
+  ul {
+    li {
+      background: blue;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:first-child {
+        margin-left: 20px;
+      }
+
+      &:hover {
+        background: green;
+      }
+    }
+  }
+}

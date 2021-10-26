@@ -1,0 +1,33 @@
+/*
+COLORS
+*/
+/*
+FONTS
+*/
+/*
+GLOBALS
+*/
+body {
+  color: pink;
+  font-size: 13px;
+  font-family: arial;
+}
+
+a {
+  color: pink;
+}
+
+p {
+  font-size: 13px;
+  font-family: "arial";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "verdana";
+}
+/*# sourceMappingURL=main.css.map */

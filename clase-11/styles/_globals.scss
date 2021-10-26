@@ -1,0 +1,26 @@
+/*
+GLOBALS
+*/
+body {
+  color: $color-red;
+  font-size: 13px;
+  font-family: arial;
+}
+
+a {
+  color: $color-red;
+}
+
+p {
+  font-size: 13px;
+  font-family: $font-family-primary;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-secondary;
+}
