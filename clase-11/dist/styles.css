@@ -1,0 +1,83 @@
+/*
+EXTEND
+*/
+main, header, footer {
+  padding: 20px;
+  background: red; }
+
+main, header, footer {
+  padding: 30px;
+  background: orange; }
+
+/*INTERPOLATION*/
+div {
+  background: url("https://www.larepublica.com/mi-imagen.png"); }
+
+/*
+MIXINGS
+*/
+/*
+TAMANIOS DE FUENTE
+*/
+/*
+COLORES
+*/
+/*
+ESPACIOS
+*/
+div {
+  padding: 0px;
+  color: red; }
+
+div {
+  padding: 20px;
+  color: orange; }
+
+h1 {
+  font-size: 34px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 18px; }
+
+.space-m-4px {
+  margin: 4px; }
+
+.space-m-8px {
+  margin: 8px; }
+
+.space-m-12px {
+  margin: 12px; }
+
+.space-m-16px {
+  margin: 16px; }
+
+.space-m-20px {
+  margin: 20px; }
+
+.space-m-24px {
+  margin: 24px; }
+
+.color-red {
+  color: red; }
+
+.color-blue {
+  color: blue; }
+
+.color-green {
+  color: green; }
+
+.color-yellow {
+  color: yellow; }
+
+.color-primary {
+  color: red; }
+
+.color-secondary {
+  color: blue; }
+
+.ejemplo-map {
+  font-size: 34px;
+  color: red; }

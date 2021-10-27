@@ -1,7 +1,152 @@
+// @import "./variables";
+// @import "./globals";
+// @import "./button";
+// @import "./footer";
+// @import "./header";
+// @import "./typographys";
 
-@import "./variables";
-@import "./globals";
-@import "./button";
-@import "./footer";
-@import "./header";
-@import "./typographys";
+/*
+EXTEND
+*/
+%boxRed {
+  padding: 20px;
+  background: red;
+}
+
+%otrosEstilos {
+  padding: 30px;
+  background: orange;
+}
+
+main {
+  @extend %boxRed;
+  @extend %otrosEstilos;
+}
+
+header {
+  @extend %boxRed;
+  @extend %otrosEstilos;
+}
+
+footer {
+  @extend %boxRed;
+  @extend %otrosEstilos;
+}
+
+/*INTERPOLATION*/
+$url-base: "https://www.larepublica.com";
+
+div {
+  background: url("#{$url-base}/mi-imagen.png");
+}
+
+/*
+MIXINGS
+*/
+@mixin box-color($padding: 0px, $color: red) {
+  padding: $padding;
+  color: $color;
+}
+
+/*
+TAMANIOS DE FUENTE
+*/
+$font-size-h1: 34px;
+$font-size-h2: 24px;
+$font-size-h3: 18px;
+$font-size-h4: 16px;
+$font-size-base: 13px;
+
+$font-sizes: 34px, 24px, 18px, 16px, 13px;
+$font-sizes-map: (
+  h1: 34px,
+  h2: 24px,
+  h3: 16px,
+  h4: 13px,
+);
+/*
+COLORES
+*/
+
+$color-red: red;
+$color-blue: blue;
+$colors: red, blue, green, yellow;
+
+$color-branding: (
+  primary: red,
+  secondary: blue,
+);
+$color-semantic: (
+  danger: red,
+  warning: orange,
+  info: blue,
+  success: green,
+);
+
+/*
+ESPACIOS
+*/
+$space-xs: 4px;
+$space-sm: 8px;
+$space-base: 12px;
+$space-lg: 16px;
+$space-xl: 20px;
+$space-xxl: 24px;
+$spaces: 4px, 8px, 12px, 16px, 20px, 24px;
+
+@mixin font-title($tag-title) {
+  @if ($tag-title == h1) {
+    font-size: map-get($font-sizes-map, $tag-title);
+  } @else if($tag-title == h2) {
+    font-size: map-get($font-sizes-map, $tag-title);
+  } @else if($tag-title == h3) {
+    font-size: $font-size-h3;
+  } @else if($tag-title == h4) {
+    font-size: $font-size-h4;
+  } @else {
+    font-size: $font-size-base;
+  }
+}
+
+div {
+  @include box-color();
+}
+
+div {
+  @include box-color(20px, orange);
+}
+
+h1 {
+  @include font-title(h1);
+}
+
+h2 {
+  @include font-title(h2);
+}
+
+h3 {
+  @include font-title(h3);
+}
+
+@each $space in $spaces {
+  .space-m-#{$space} {
+    margin: $space;
+  }
+}
+
+@each $color in $colors {
+  .color-#{$color} {
+    color: $color;
+  }
+}
+
+@each $key, $value in $color-branding {
+  .color-#{$key} {
+    color: $value;
+  }
+}
+
+.ejemplo-map {
+  font-size: map-get($font-sizes-map, h1);
+  color: map-get($color-branding, primary);
+}
