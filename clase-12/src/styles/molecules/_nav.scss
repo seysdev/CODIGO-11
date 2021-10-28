@@ -1,0 +1,23 @@
+.nav {
+    background: blue;
+    padding:20px;
+
+    a {
+        color:white;
+    }
+
+   &__ul {
+       display:flex;
+       align-items:center;
+       padding: 0;
+       list-style: none;
+   }
+
+   &__li {
+       margin:0 10px;
+   }
+
+   &--light {
+       background: pink;
+   }
+}

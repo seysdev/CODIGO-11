@@ -1,0 +1,91 @@
+.btn {
+  min-width: 120px;
+  padding: 10px 15px;
+  border: 1px solid grey;
+  background-color: grey;
+  font-size: 14px; }
+
+.btn-primary {
+  background-color: orange;
+  border-color: orange; }
+
+.btn-secondary {
+  background-color: purple;
+  border-color: purple;
+  color: white; }
+
+.btn-sm {
+  font-size: 12px;
+  min-width: 80px;
+  padding: 8px 10px; }
+
+.input {
+  border: 1px solid grey;
+  padding: 10px 15px; }
+
+.alert {
+  background-color: grey;
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid grey;
+  color: white; }
+
+.alert-success {
+  background-color: green;
+  border-color: green; }
+
+.alert-error {
+  background-color: red;
+  border-color: red; }
+
+.nav {
+  background: blue;
+  padding: 20px; }
+  .nav a {
+    color: white; }
+  .nav__ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    list-style: none; }
+  .nav__li {
+    margin: 0 10px; }
+  .nav--light {
+    background: pink; }
+
+.search {
+  border: 1px solid grey;
+  padding: 20px;
+  display: inline-flex;
+  background: grey; }
+
+.header {
+  display: flex;
+  background: orange;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center; }
+  .header__left {
+    display: flex;
+    align-items: center; }
+  .header__logo {
+    font-size: 24px;
+    margin-right: 20px; }
+  .header__nav {
+    background: yellow; }
+  .header--dark {
+    background: black;
+    color: white; }
+    .header--dark a {
+      color: white; }
+
+.main {
+  background: pink;
+  padding: 20px; }
+
+.footer {
+  background: orange;
+  padding: 20px; }
+
+.page-home .header {
+  background: brown; }

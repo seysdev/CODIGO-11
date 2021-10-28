@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  background: orange;
+  padding: 20px;
+  justify-content: space-between;
+  align-items:center;
+
+  &__left {
+    display:flex;
+    align-items:center;
+  }
+
+  &__logo {
+    font-size: 24px;
+    margin-right: 20px;
+  }
+
+  &__nav {
+    background: yellow;
+  }
+
+  &--dark {
+    background: black;
+    color:white;
+
+    a {
+     color:white;
+    }
+  }
+}
