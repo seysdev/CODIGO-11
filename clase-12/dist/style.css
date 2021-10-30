@@ -52,6 +52,9 @@
     margin: 0 10px; }
   .nav--light {
     background: pink; }
+  @media (max-width: 320px) {
+    .nav {
+      background: red; } }
 
 .search {
   border: 1px solid grey;

@@ -20,4 +20,8 @@
    &--light {
        background: pink;
    }
+
+   @media (max-width: 320px) {
+     background: red;
+   }
 }
