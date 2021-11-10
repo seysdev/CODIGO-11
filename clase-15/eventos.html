@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENTOS</title>
+  <style>
+    body * {
+      margin: 10px;
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="">
+    FORM
+    <div>
+      DIV
+      <p>
+        P
+      </p>
+    </div>
+  </form>
+
+  <script>
+    const form = document.querySelector('form');
+    const div = document.querySelector('div');
+    const p = document.querySelector('p');
+
+    form.addEventListener('click', function () {
+      console.log('formulario')
+    }, false)
+
+    div.addEventListener('click', function (event) {
+
+      console.log('div')
+    }, false)
+
+    p.addEventListener('click', function (event) {
+      event.stopPropagation()
+      console.log('p')
+    }, false)
+  </script>
+</body>
+
+</html>

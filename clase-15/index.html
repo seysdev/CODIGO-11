@@ -7,23 +7,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JAVASCRIPT</title>
   <style>
+    .dropdown {
+      background: pink;
+      padding: 0;
+      border-radius: 8px;
+      padding: 20px;
+      list-style: none;
+      display: none;
+    }
+
+    li {
+      padding: 10px;
+      border-radius: 4px;
+    }
+
+    li:hover {
+      background: white;
+    }
+
     body {
-      background: #f00;
+      height: 100vh;
     }
   </style>
 </head>
 
 <body>
-  <script>
-    // COMENTARIOS
+  <div id="id"></div>
+  <button>ABRIR DROPDOWN</button>
+  <button class="js_quit">QUITAR EVENTO</button>
+  <ul class="dropdown js_dropdown">
+    <li>ITEM UNO</li>
+    <li>ITEM DOS</li>
+    <li>ITEM TRES</li>
+    <li>ITEM CUATRO</li>
+  </ul>
 
-    /*
-      MULTILINEA
-      MULTILINEA
-      MULTILINEA
-    */
+  <input type="text">
+  <input type="checkbox">
 
-  </script>
+  <form action="">
+    <input type="text" placeholder="Nombre">
+    <input type="text" placeholder="Apellido">
+    <button>Enviar</button>
+  </form>
+   <a href="">LINK</a>
 
   <!-- <script src="./scripts/variables.js"></script>
   <script src="./scripts/funciones.js"></script>
@@ -60,7 +87,7 @@
 
   <script src="./scripts/operadores.js"></script> -->
   <!-- <script src="./scripts/condicionales.js"></script> -->
-  <script src="./scripts/loops.js"></script>
+  <script src="./scripts/eventos.js"></script>
 </body>
 
 </html>
