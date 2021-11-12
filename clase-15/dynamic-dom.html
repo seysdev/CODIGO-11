@@ -146,7 +146,9 @@
          <button>X</button>
       `
       article.classList.add('card')
+
       article.querySelector('button').onclick = function () {
+        console.log(this)
         const flag = confirm('Estas seguro que deseas eliminar la tarjeta?');
         if (flag) app.removeChild(article)
         // if (flag) article.remove()

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>METODOS DOM</title>
+</head>
+
+<body>
+  <!-- REPLACECHILD -->
+  <!-- <button>REMPLAZAR</button>
+  <div class="container">
+    <h2>hola mundo por defecto</h2>
+  </div>
+  <script>
+    const h1 = document.createElement('h1');
+    h1.innerHTML = '<span>hola mundo remplazado</span>'
+    const container = document.querySelector('.container');
+    const button = document.querySelector('button')
+    const h2 = document.querySelector('h2')
+
+    button.addEventListener('click', function () {
+      container.replaceChild(h1, h2)
+    })
+  </script> -->
+
+  <!-- CLONENODE -->
+  <!-- <div>
+    <p>lorem ipsum dolor sit</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+    </ul>
+  </div>
+
+  <script>
+    const div = document.querySelector('div');
+    div.onclick = function () {
+      alert('ola')
+    }
+
+    const clone = div.cloneNode(true)
+    document.querySelector('body').appendChild(clone) -->
+
+  <!-- INSERTBEFORE -->
+  <button>INSERTBEFORE</button>
+  <div class="container">
+    <h2>hola mundo por defecto</h2>
+  </div>
+  <script>
+    const h1 = document.createElement('h1');
+    h1.innerHTML = '<span>hola mundo remplazado</span>';
+    const h2 = document.querySelector('h2');
+    const container = document.querySelector('.container');
+    const button = document.querySelector('button');
+
+    button.addEventListener('click', function () {
+      // container.insertBefore(h1, h2)
+      container.insertBefore(h1, h2.nextSibling)
+    })
+  </script>
+
+
+
+  </script>
+</body>
+
+</html>
