@@ -70,3 +70,28 @@ async function main() {
 }
 
 main();
+
+async function prueba() {
+  const promesa = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+      resolve([0, 1, 2, 3, 4]);
+    }, 2000);
+  });
+
+  try {
+    const response = await promesa;
+    console.log('response', response);
+  } catch (e) {
+    console.log('error', e);
+  }
+
+  // promesa
+  //   .then((response) => {
+  //     console.log('response', response);
+  //   })
+  //   .catch((err) => {
+  //     console.log('error', err);
+  //   });
+}
+
+prueba();

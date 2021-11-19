@@ -1,0 +1,36 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "name": "sebastian",
+      "lastname": "yabiku",
+      "age": "34"
+    },
+    {
+      "name": "angel",
+      "lastname": "farfan",
+      "age": "23",
+      "id": 2
+    },
+    {
+      "name": "LUIS",
+      "lastname": "farfan",
+      "age": "23",
+      "id": 3
+    },
+    {
+      "name": "LUIS",
+      "lastname": "farfan",
+      "age": "23",
+      "id": 4
+    }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "name": "cantinflas",
+      "lastname": "yabiku",
+      "age": "34"
+    }
+  ]
+}

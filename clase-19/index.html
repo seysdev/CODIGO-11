@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULARIO ALUMNOS</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+  <nav>
+    <ul>
+      <li class="is-active"><a href="index.html">REGISTAR ALUMNOS</a></li>
+      <li><a href="listar.html">ALUMNOS</a></li>
+    </ul>
+  </nav>
+  <div class="box">
+    <h1>REGISTRAR ALUMNOS</h1>
+    <form method="POST" onSubmit="return false;">
+      <div>
+        <input class="js_name" type="text" placeholder="Nombre" required>
+      </div>
+      <div>
+        <input class="js_lastname" type="text" placeholder="Apellido" required>
+      </div>
+      <div>
+        <input class="js_age" type="number" placeholder="Edad" required>
+      </div>
+      <div>
+        <button>ENVIAR</button>
+      </div>
+    </form>
+  </div>
+  <script>
+
+    function registerAlumn() {
+      const name = document.querySelector('.js_name')
+      const lastname = document.querySelector('.js_lastname')
+      const age = document.querySelector('.js_age')
+      const form = document.querySelector('form')
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault()
+        const body = {
+          name: name.value,
+          lastname: lastname.value,
+          age: age.value
+        }
+
+        fetch('http://localhost:3000/alumnos', {
+          method: 'POST',
+          body: JSON.stringify(body),
+          headers: {
+            "Content-type": "application/json; charset=UTF-8"
+          }
+        }).then((response) => {
+          return response.json()
+        }).then((response) => {
+          console.log('response')
+        })
+      })
+    }
+
+    registerAlumn()
+
+  </script>
+</body>
+
+</html>
