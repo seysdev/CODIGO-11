@@ -23,6 +23,24 @@
       "lastname": "farfan",
       "age": "23",
       "id": 4
+    },
+    {
+      "name": "sebastian",
+      "lastname": "yabiku",
+      "age": "23",
+      "id": 5
+    },
+    {
+      "name": "sebastian",
+      "lastname": "yabiku",
+      "age": "23",
+      "id": 6
+    },
+    {
+      "name": "pedro",
+      "lastname": "yabiku",
+      "age": "23",
+      "id": 7
     }
   ],
   "profesores": [
