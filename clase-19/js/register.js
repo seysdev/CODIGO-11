@@ -23,6 +23,7 @@ function registerAlumn() {
         return response.json();
       })
       .then((response) => {
+        location.replace('/clase-19/listar.html');
         console.log('response');
       })
       .catch(() => {

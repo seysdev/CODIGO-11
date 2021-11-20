@@ -1,46 +1,22 @@
 {
   "alumnos": [
     {
-      "id": 1,
-      "name": "sebastian",
-      "lastname": "yabiku",
-      "age": "34"
+      "name": "sebastian modificado",
+      "lastname": "yabiku modificado",
+      "age": "34",
+      "id": 1
     },
     {
-      "name": "angel",
-      "lastname": "farfan",
-      "age": "23",
-      "id": 2
-    },
-    {
-      "name": "LUIS",
-      "lastname": "farfan",
-      "age": "23",
+      "name": "melisa modificado dada da",
+      "lastname": "yabiku modificado ad da a",
+      "age": "34",
       "id": 3
     },
     {
-      "name": "LUIS",
-      "lastname": "farfan",
-      "age": "23",
+      "name": "dasd as",
+      "lastname": " dsa dsad ",
+      "age": "323232",
       "id": 4
-    },
-    {
-      "name": "sebastian",
-      "lastname": "yabiku",
-      "age": "23",
-      "id": 5
-    },
-    {
-      "name": "sebastian",
-      "lastname": "yabiku",
-      "age": "23",
-      "id": 6
-    },
-    {
-      "name": "pedro",
-      "lastname": "yabiku",
-      "age": "23",
-      "id": 7
     }
   ],
   "profesores": [
