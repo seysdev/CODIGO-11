@@ -2,7 +2,7 @@ import './card.css';
 
 function Card(props) {
   const { name, lastname, age, photo } = props;
-  
+
   return (
     <article className="card">
       <h2>

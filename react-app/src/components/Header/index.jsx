@@ -4,7 +4,10 @@ import './header.css';
 function Header() {
   return (
     <header className="header">
-      <a className="header__logo">LOGO</a> <Nav />
+      <a href="https://google.com" className="header__logo">
+        LOGO
+      </a>{' '}
+      <Nav />
     </header>
   );
 }
