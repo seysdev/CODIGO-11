@@ -37,8 +37,14 @@ function App() {
     },
   ];
 
+  function Hola(props) {
+    return <div>HOla {props.name}</div>;
+  }
+
   return (
     <div className="app">
+      <Hola name="jose" />
+      <Hola name="pepe" />
       <Header />
       <Main>
         <Grid columns={4}>
