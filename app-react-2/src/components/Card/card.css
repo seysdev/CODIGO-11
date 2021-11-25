@@ -1,0 +1,56 @@
+.card {
+  padding: 20px 40px;
+  border: 1px solid #969696;
+  text-align: center;
+  color: #000;
+}
+
+.card figure {
+  margin-bottom: 30px;
+}
+
+.card img {
+  border-radius: 100%;
+  border: 4px solid #009b9b;
+  display: block;
+  margin: auto;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card__type {
+  color: #5500c1;
+}
+
+.card__stock {
+  color: #fe9a03;
+}
+
+.card__counter input {
+  width: 100px;
+  background: #cd1b86;
+  color: #fff;
+  text-align: center;
+}
+
+.card__counter input,
+.card__counter button {
+  height: 40px;
+  border: 0;
+}
+
+.card__counter button {
+  font-size: 1.6rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 0 20px;
+}
