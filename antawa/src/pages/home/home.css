@@ -1,0 +1,5 @@
+.ant-tabs-card.tab-mod > .ant-tabs-nav .ant-tabs-tab,
+.ant-tabs-card.tab-mod > div > .ant-tabs-nav .ant-tabs-tab {
+  @apply bg-primary;
+  color: white;
+}
