@@ -1,0 +1,5 @@
+.footer {
+  @apply bg-primary;
+  @apply text-white;
+  @apply p-4;
+}
