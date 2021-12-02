@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './card.css';
 
 function Card(props) {
@@ -14,13 +14,14 @@ function Card(props) {
   } = props;
 
   const [quantityState, setQuantityState] = useState(quantity);
+  const statePersist = useRef(null);
 
   function handleClickDecrement() {
     console.log('decrementar!!!');
     setQuantityState((state) => {
       return state - 1;
     });
-    onQuantity(id, quantity);
+    // onQuantity(id, quantity);
     // onQuantity(quantity);
   }
 
@@ -29,7 +30,7 @@ function Card(props) {
       return state + 1;
     });
 
-    onQuantity(id, quantity);
+    // onQuantity(id, quantity);
     // onQuantity(quantity);
   }
 
@@ -37,10 +38,11 @@ function Card(props) {
     console.log('e', e.target.value);
   }
 
-  // useEffect(() => {
-  //   // console.log('quantity', quantity);
-
-  // }, [quantity]);
+  useEffect(() => {
+    if (quantityState > 0) {
+      onQuantity(id, quantityState);
+    }
+  }, [quantityState]);
 
   return (
     <article className={`card ${className}`}>
