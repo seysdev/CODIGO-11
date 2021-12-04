@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 import { App } from './App';
 import { Formulario } from './Formulario';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<Formulario />, document.getElementById('root'));

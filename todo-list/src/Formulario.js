@@ -254,6 +254,12 @@ function Formulario() {
           <button>ENVIAR</button>
         </div>
       </form>
+
+      {alumnos.length > 0 ? (
+        alumnos.map((alumno) => alumno.name)
+      ) : (
+        <h2>'NO HAY ALUMNOS AUN'</h2>
+      )}
     </div>
   );
 }

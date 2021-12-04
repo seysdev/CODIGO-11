@@ -26,5 +26,32 @@
       "lastname": "yabiku",
       "age": "34"
     }
+  ],
+  "mascotas": [
+    {
+      "id": 1,
+      "name": "Aronis",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Leon",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Falco",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Rin tin tin",
+      "photo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Cane_da_pastore_tedesco_adulto.jpg"
+    },
+    {
+      "name": "ROCKY",
+      "photo": "https://www.happets.com/blog/wp-content/uploads/2020/02/pastor-aleman-alimentacion-y-cuidados.jpg",
+      "id": 5
+    }
   ]
 }

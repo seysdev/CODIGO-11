@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dbFake": "npx json-server --watch ./db.json"
+    "dbFake": "npx json-server -p 4000 --watch ./db.json"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,9 @@
   },
   "description": "",
   "devDependencies": {
-    "json-server": "^0.17.0"
+    "autoprefixer": "^9.8.8",
+    "json-server": "^0.17.0",
+    "postcss": "^7.0.39",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
   }
 }
